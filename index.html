@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FYF Tools | Fill Your Forms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4fbfc;
+    color:#0e2426;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#ffffff;
+    padding:16px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.04);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo span{
+    font-size:26px;
+    font-weight:700;
+    color:#0fb9b1;
+}
+
+.logo small{
+    font-size:14px;
+    color:#666;
+}
+
+.header-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    padding:8px 18px;
+    border-radius:6px;
+    border:1px solid #0fb9b1;
+    background:#0fb9b1;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.btn-outline{
+    background:#fff;
+    color:#0fb9b1;
+}
+
+/* ===== HERO ===== */
+.hero{
+    background:linear-gradient(180deg,#58b6c9 0%, #66c4d6 100%);
+    padding:90px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:14px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+/* ===== TOOLS SECTION ===== */
+.tools-section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.tools-section h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.tools-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.tool-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:30px 20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.tool-card:hover{
+    transform:translateY(-5px);
+}
+
+.tool-card h3{
+    color:#0fb9b1;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.tool-card p{
+    font-size:14px;
+    color:#555;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+    color:#666;
+    background:#ffffff;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="logo">
+        <span>FYF</span>
+        <small>Fill Your Forms</small>
+    </div>
+
+    <div class="header-buttons">
+        <button class="btn">Tools</button>
+        <button class="btn btn-outline">Select Language</button>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <h1>FYF TOOLS</h1>
+    <p>A single platform for all your file & document tools</p>
+</section>
+
+<!-- ===== TOOLS ===== -->
+<section class="tools-section">
+    <h2>Our Tools</h2>
+
+    <div class="tools-grid">
+
+        <div class="tool-card" onclick="location.href='/jpg-to-pdf'">
+            <h3>JPG to PDF</h3>
+            <p>Convert images into PDF easily</p>
+        </div>
+
+        <div class="tool-card" onclick="location.href='/pdf-to-jpg'">
+            <h3>PDF to JPG</h3>
+            <p>Convert PDF pages to images</p>
+        </div>
+
+        <div class="tool-card" onclick="location.href='/compress-image'">
+            <h3>Compress Image</h3>
+            <p>Reduce image size without quality loss</p>
+        </div>
+
+        <div class="tool-card" onclick="location.href='/compress-pdf'">
+            <h3>Compress PDF</h3>
+            <p>Make PDF smaller & faster</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    © 2021 – 2026 | Fill Your Forms (FYF)
+</footer>
+
+</body>
+</html>
